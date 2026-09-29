@@ -1,0 +1,81 @@
+{
+ "negocio": "Joel Santiago",
+ "apellido_largo": "Joel Santiago · Color Designer",
+ "claim": "Hair Color Studio",
+ "ciudad": "Alcalá de Henares",
+ "direccion": "C. de Santiago, 28 · 28801 Alcalá de Henares",
+ "telefono": "624 10 66 96",
+ "telefono2": "687 22 70 42",
+ "whatsapp": "34687227042",
+ "movil_txt": "687 22 70 42",
+ "nota": 5,
+ "resenas": 86,
+ "maps": "https://maps.google.com/?cid=3850897899196860870",
+ "maps_buscar": "https://www.google.com/maps/search/?api=1&query=Joel+Santiago+color+designer+Calle+de+Santiago+28+Alcala+de+Henares",
+ "instagram": "https://www.instagram.com/joelsantiago.color.designer/",
+ "instagram_txt": "@joelsantiago.color.designer",
+ "tiktok": "https://www.tiktok.com/@joelsantiagocolordesigne",
+ "tiktok_txt": "@joelsantiagocolordesigne",
+ "horario": [
+  [
+   "lunes",
+   "10:00-14:00"
+  ],
+  [
+   "martes",
+   "10:00-20:00"
+  ],
+  [
+   "miércoles",
+   "10:00-20:00"
+  ],
+  [
+   "jueves",
+   "10:00-20:00"
+  ],
+  [
+   "viernes",
+   "10:00-20:00"
+  ],
+  [
+   "sábado",
+   "10:00-14:00"
+  ],
+  [
+   "domingo",
+   "Cerrado"
+  ]
+ ],
+ "resenas_google": [
+  {
+   "autor": "Dalma Gutierrez",
+   "nota": 5,
+   "texto": "Mi primera vez en el salón y ha sido una gran experiencia. Atención personalizada, el ambiente increíble con buena energía y música. Joel es un gran profesional y he quedado muy contenta con mi nuevo cabello ✨",
+   "cuando": "Hace 3 semanas"
+  },
+  {
+   "autor": "Carolina Valdivieso",
+   "nota": 5,
+   "texto": "Gracias Joel por tu trabajo tan impecable y profesional , volví a recuperar la vida de mi cabello y el color fabulosos tal cual como te lo pedí , eres el mejor de España en Colorimetría,además que los productos son una pasada  ...... Mil Gracias ! En Horabuena",
+   "cuando": "Hace 4 meses"
+  },
+  {
+   "autor": "Maria Jose Carballo Contreras",
+   "nota": 5,
+   "texto": "Joel es, sin duda, el mejor peluquero que he tenido. Siempre atento, amable y con un trato excelente. Se nota que le apasiona lo que hace, siempre te hace sentir cómodo desde el primer momento. Su profesionalidad se nota en cada detalle, y el resultado de su trabajo es simplemente impecable. Sin duda, no lo cambiaría por nada cuando se trata de mi corte de pelo, salgo siempre encantada con el resultado. Para mi es insustituible.",
+   "cuando": "Hace 5 meses"
+  },
+  {
+   "autor": "Deby D.",
+   "nota": 5,
+   "texto": "Joel es un excelente profesional, maravilloso, quedé encantada con el resultado!! 🤩\nOs cuento que en mi caso el resultado es aún más excepcional, porque yo fui con el cabello muy quemado, muy maltratado y bicolor y salí con unas mechas hermosas y el cabello reparado.\nMe puso un tratamiento que reparó mi cabello quemado y lo dejó con brillo y sedoso.\nRealmente lo que hizo Joel es casi magia 😊\nAdemás el trato es inmejorable. Te atiende como a una reina, te asesora, te explica, es super majo, te brinda café y hace que te sientas super a gusto.\nSin duda esta será mi peluquería habitual a partir de ahora. Os lo recomiendo totalmente.",
+   "cuando": "Hace 11 meses"
+  },
+  {
+   "autor": "Anya Medvedeva",
+   "nota": 5,
+   "texto": "Fui atendida por Joel Santiago y me encantó todo. La atmósfera del lugar es muy agradable, con buena música y un interior precioso. Joel fue muy atento y profesional, escuchó mis deseos y me dio excelentes recomendaciones.\nEl corte quedó perfecto, cuidó cada detalle y cada mechón con mucha precisión. Además, es una persona muy amable y cercana, lo que hace la experiencia aún más agradable.\nSalí con muy buen ánimo y completamente satisfecha con el resultado. ¡Muchas gracias, Joel!\nLa próxima vez volveré sin duda y lo recomendaré a mis amigos. 🌿✂️💇‍♀️",
+   "cuando": "Hace 11 meses"
+  }
+ ]
+}

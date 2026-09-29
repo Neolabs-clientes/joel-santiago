@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joel Santiago · Color Designer — Peluquería en Alcalá de Henares</title>
+<meta name="description" content="Joel Santiago, especialista en balayage y colorimetría en Alcalá de Henares. Color con luz y dimensión, cortes, recogidos y maquillaje. 5,0 con 86 reseñas en Google. Pide tu cita.">
+<link rel="canonical" href="https://neolabs-clientes.github.io/joel-santiago/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Joel Santiago · Color Designer — Hair Color Studio en Alcalá de Henares">
+<meta property="og:description" content="Especialista en balayage y colorimetría. Luz y dimensión para tu melena. 5,0 con 86 reseñas en Google.">
+<meta property="og:image" content="https://neolabs-clientes.github.io/joel-santiago/og.jpg">
+<meta property="og:url" content="https://neolabs-clientes.github.io/joel-santiago/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0B0C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0B0C'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23C6A16B' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinta:#0B0B0C; --papel:#F6F3EE; --champan:#C6A16B; --champan-claro:#E4CBA1;
+  --verde:#2C4436; --gris:#8A8579; --linea:rgba(198,161,107,.28);
+  --disp:'Cormorant Garamond',Georgia,serif; --sans:'Jost',-apple-system,Segoe UI,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--tinta);color:var(--papel);font-family:var(--sans);font-weight:300;
+  line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1220px,92vw);margin-inline:auto}
+.lab{font-family:var(--sans);font-size:.68rem;font-weight:500;letter-spacing:.34em;
+  text-transform:uppercase;color:var(--champan)}
+.disp{font-family:var(--disp);font-weight:300;line-height:1.02;letter-spacing:-.015em}
+p{color:#D9D4CB}
+.tenue{color:var(--gris)}
+section{position:relative}
+/* ---------- nav ---------- */
+header{position:fixed;inset:0 0 auto;z-index:60;padding:1.15rem 0;transition:.4s;
+  background:linear-gradient(180deg,rgba(11,11,12,.95),rgba(11,11,12,.42));
+  backdrop-filter:blur(10px)}
+header.fijo{background:rgba(11,11,12,.94);backdrop-filter:blur(14px);padding:.7rem 0;
+  border-bottom:1px solid rgba(198,161,107,.16)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.marca{font-family:var(--disp);font-size:1.42rem;letter-spacing:.06em;line-height:1}
+.marca small{display:block;font-family:var(--sans);font-size:.52rem;letter-spacing:.42em;
+  color:var(--champan);margin-top:.32rem}
+.menu{display:flex;gap:2.1rem;font-size:.74rem;letter-spacing:.19em;text-transform:uppercase}
+.menu a{opacity:.82;transition:.25s}.menu a:hover{opacity:1;color:var(--champan-claro)}
+.boton{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--champan);
+  color:var(--champan);padding:.66rem 1.35rem;font-size:.71rem;letter-spacing:.2em;
+  text-transform:uppercase;transition:.3s;white-space:nowrap}
+.boton:hover{background:var(--champan);color:var(--tinta)}
+.boton.solido{background:var(--champan);color:#101010;border-color:var(--champan)}
+.boton.solido:hover{background:var(--champan-claro);border-color:var(--champan-claro)}
+.burger{display:none;background:none;border:0;color:var(--papel);font-size:1.6rem;cursor:pointer}
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;padding:9.5rem 3vw 5rem 0;
+  background:radial-gradient(120% 90% at 0% 20%,#141416 0%,var(--tinta) 62%)}
+.hero-int{max-width:620px;padding-left:4vw;width:100%}
+.hero h1{font-size:clamp(3.3rem,8.4vw,7.2rem);margin:1.5rem 0 0}
+.hero h1 em{font-style:italic;color:var(--champan)}
+.hero .sub{max-width:44ch;margin-top:1.6rem;font-size:1.02rem}
+.acciones{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.4rem}
+.sello{display:flex;align-items:center;gap:.75rem;margin-top:2.6rem;font-size:.78rem;
+  letter-spacing:.06em;color:#CFCAC2}
+.estrellas{color:var(--champan);letter-spacing:.14em}
+.hero-foto{position:relative;overflow:hidden;background:#111}
+.hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.hero-foto::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,rgba(11,11,12,.72) 0%,rgba(11,11,12,0) 42%)}
+.hero-marco{position:absolute;left:2.6rem;bottom:2.6rem;z-index:2;text-align:left;
+  font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:#F2EDE4;
+  background:rgba(11,11,12,.55);backdrop-filter:blur(8px);padding:.72rem 1.05rem;
+  border-left:2px solid var(--champan)}
+.scroll{position:absolute;left:4vw;bottom:2.4rem;z-index:3;display:flex;align-items:center;gap:.8rem;
+  font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;color:var(--champan)}
+.scroll span{display:block;width:64px;height:1px;background:var(--linea);position:relative;overflow:hidden}
+.scroll span::after{content:"";position:absolute;inset:0;background:var(--champan);
+  animation:bar 2.4s ease-in-out infinite}
+@keyframes bar{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
+</style>
+</head>
+<body>
+<style>
+/* ---------- cinta ---------- */
+.cinta{background:var(--tinta);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
+  overflow:hidden;padding:.95rem 0;white-space:nowrap}
+.cinta-in{display:inline-flex;gap:2.6rem;animation:desliza 34s linear infinite;
+  font-family:var(--disp);font-style:italic;font-size:1.16rem;color:var(--champan)}
+.cinta-in i{font-style:normal;color:var(--gris);font-size:.62rem;letter-spacing:.3em;
+  text-transform:uppercase;align-self:center}
+@keyframes desliza{to{transform:translateX(-50%)}}
+/* ---------- estudio ---------- */
+.estudio{padding:8.5rem 0;background:var(--tinta)}
+.estudio .rej{display:grid;grid-template-columns:1.1fr .9fr;gap:5vw;align-items:center}
+.estudio h2{font-size:clamp(2.4rem,5vw,4.3rem);margin:1.2rem 0 0}
+.estudio h2 em{font-style:italic;color:var(--champan-claro)}
+.estudio p{margin-top:1.6rem;max-width:52ch}
+.datos{display:flex;gap:3.2rem;margin-top:3rem;flex-wrap:wrap}
+.datos b{display:block;font-family:var(--disp);font-size:2.5rem;font-weight:400;color:var(--champan)}
+.datos span{font-size:.63rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gris)}
+.retrato{position:relative}
+.retrato img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.retrato::before{content:"";position:absolute;inset:-16px 16px 16px -16px;
+  border:1px solid var(--linea);z-index:-1}
+/* ---------- servicios ---------- */
+.serv{padding:7.5rem 0 6rem;background:var(--papel);color:var(--tinta)}
+.serv .cab{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;
+  flex-wrap:wrap;margin-bottom:3.4rem}
+.serv h2{font-size:clamp(2.3rem,4.6vw,3.9rem);color:var(--tinta)}
+.serv .lab{color:#9A7B41}
+.lista{border-top:1px solid rgba(11,11,12,.14)}
+.fila{display:grid;grid-template-columns:4.2rem 1.05fr 1.25fr auto;gap:2rem;align-items:baseline;
+  padding:1.7rem .4rem;border-bottom:1px solid rgba(11,11,12,.14);transition:.35s;cursor:pointer}
+.fila:hover{background:#EFEAE1;padding-left:1.1rem}
+.fila .num{font-size:.7rem;letter-spacing:.22em;color:#9A7B41}
+.fila h3{font-family:var(--disp);font-weight:400;font-size:1.72rem;line-height:1.15}
+.fila p{color:#5C574F;font-size:.94rem;margin:0}
+.fila .ir{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:#9A7B41;white-space:nowrap}
+.fila:hover .ir{color:var(--tinta)}
+.nota-serv{margin-top:2.4rem;display:flex;gap:1.4rem;align-items:center;flex-wrap:wrap;
+  font-size:.88rem;color:#5C574F}
+/* ---------- portfolio ---------- */
+.port{padding:8rem 0;background:var(--tinta)}
+.port h2{font-size:clamp(2.3rem,4.6vw,3.9rem);margin:1.1rem 0 3.2rem}
+.mosaico{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.mosaico figure{position:relative;overflow:hidden;aspect-ratio:4/5}
+.mosaico img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.mosaico figure:hover img{transform:scale(1.05)}
+.mosaico figcaption{position:absolute;left:0;bottom:0;right:0;padding:1.5rem 1.2rem .9rem;
+  font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:#F1ECE3;
+  background:linear-gradient(0deg,rgba(11,11,12,.88),rgba(11,11,12,.12) 60%,transparent);
+  opacity:.92;transition:.4s}
+.mosaico figure:hover figcaption{opacity:1;color:#fff}
+.port .pie{margin-top:2.6rem;display:flex;justify-content:center}
+/* ---------- salon ---------- */
+.salon{padding:7.5rem 0;background:#111113}
+.salon .rej{display:grid;grid-template-columns:.95fr 1.05fr;gap:5vw;align-items:center}
+.salon img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.salon h2{font-size:clamp(2.2rem,4.3vw,3.5rem);margin:1.1rem 0 1.5rem}
+.horario{width:100%;border-collapse:collapse;margin-top:1.8rem;font-size:.92rem}
+.horario td{padding:.55rem 0;border-bottom:1px solid rgba(198,161,107,.16)}
+.horario td:last-child{text-align:right;color:var(--champan-claro)}
+.cita-frase{margin-top:2rem;padding-left:1.2rem;border-left:1px solid var(--champan);
+  font-family:var(--disp);font-style:italic;font-size:1.15rem;color:#CFCAC2}
+/* ---------- opiniones ---------- */
+.opiniones{padding:7.5rem 0;background:var(--papel);color:var(--tinta)}
+.opiniones h2{font-size:clamp(2.2rem,4.3vw,3.5rem);color:var(--tinta)}
+.puntuacion{display:flex;align-items:center;gap:1.6rem;flex-wrap:wrap;margin:1.4rem 0 3.2rem}
+.puntuacion b{font-family:var(--disp);font-size:3.1rem;font-weight:400;color:#9A7B41}
+.tarjetas{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.tj{background:#fff;border:1px solid rgba(11,11,12,.08);padding:1.9rem 1.7rem;display:flex;
+  flex-direction:column;gap:.9rem}
+.tj p{color:#413D38;font-size:.95rem;font-style:italic;font-family:var(--disp);font-size:1.06rem}
+.tj .quien{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:#9A7B41}
+/* ---------- contacto ---------- */
+.contacto{padding:8rem 0 6rem;background:radial-gradient(90% 80% at 50% 0%,#17171A 0,var(--tinta) 60%)}
+.contacto h2{font-size:clamp(2.6rem,6.4vw,5.2rem);text-align:center;margin:1.4rem 0 1.6rem}
+.contacto h2 em{font-style:italic;color:var(--champan)}
+.contacto .cta{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-top:2.4rem}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2.4rem;margin-top:5rem;
+  border-top:1px solid var(--linea);padding-top:3rem}
+.cols h4{font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:var(--champan);
+  margin-bottom:.9rem}
+.cols p,.cols a{font-size:.95rem;color:#CFCAC2}
+.cols a:hover{color:var(--champan-claro)}
+footer{background:#08080A;padding:3.2rem 0 2.4rem;font-size:.8rem;color:var(--gris)}
+footer .rej{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:center}
+footer a:hover{color:var(--champan-claro)}
+.legales{display:flex;gap:1.4rem;flex-wrap:wrap;margin-top:1.6rem;font-size:.72rem}
+.flota{position:fixed;right:1.5rem;bottom:1.5rem;z-index:70;width:56px;height:56px;
+  border-radius:50%;background:#25D366;display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.45);transition:.3s}
+.flota:hover{transform:translateY(-3px) scale(1.04)}
+.flota svg{width:30px;height:30px;fill:#fff}
+.rev{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),
+  transform .9s cubic-bezier(.2,.7,.2,1)}
+.rev.visto{opacity:1;transform:none}
+@media (max-width:1000px){
+  .hero{grid-template-columns:1fr}.hero-txt{padding:8.5rem 0 3rem}
+  .hero-foto{min-height:74svh}
+  .estudio .rej,.salon .rej{grid-template-columns:1fr;gap:3rem}
+  .tarjetas{grid-template-columns:1fr}.mosaico{grid-template-columns:repeat(2,1fr)}
+  .cols{grid-template-columns:1fr;gap:2rem}
+  .hero-foto img{object-position:50% 52%}
+  .marca small{font-size:.44rem;letter-spacing:.22em}
+  .fila{grid-template-columns:3rem 1fr;gap:1rem;padding:1.4rem .2rem}
+  .fila .ir,.fila p{grid-column:2}
+  .menu{display:none}.burger{display:block}
+  .scroll{display:none}
+}
+@media (max-width:620px){.mosaico{grid-template-columns:repeat(2,1fr)}
+  .estudio,.serv,.port,.salon,.opiniones{padding:4.6rem 0}
+  .hero h1{font-size:clamp(3.1rem,14vw,4.6rem)}}
+</style>
+<header id="cab">
+  <div class="wrap nav">
+    <a href="#top" class="marca">Joel Santiago<small>Color Studio · Alcalá de Henares</small></a>
+    <nav class="menu">
+      <a href="#estudio">El estudio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#salon">El salón</a>
+      <a href="#opiniones">Opiniones</a>
+    </nav>
+    <a class="boton" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener">Pedir cita</a>
+    <button class="burger" aria-label="Menú">&#9776;</button>
+  </div>
+</header>
+<section class="hero" id="top">
+  <div class="hero-txt">
+    <div class="hero-int">
+      <span class="lab">Hair color studio · Alcalá de Henares</span>
+      <h1 class="disp">Joel<br><em>Santiago</em></h1>
+      <p class="sub">Especialista en <strong>balayage y colorimetría</strong>. Trabajo el color
+      con luz y dimensión: rubios que no se apagan, cobrizos que brillan y melenas que
+      parecen recién salidas de casa.</p>
+      <div class="acciones">
+        <a class="boton solido" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+        <a class="boton" href="#trabajos">Ver trabajos</a>
+      </div>
+      <div class="sello"><span class="estrellas">★★★★★</span>
+        <span><strong>5,0</strong> · 86 reseñas en Google</span></div>
+    </div>
+    <div class="scroll"><span></span>Desliza</div>
+  </div>
+  <div class="hero-foto">
+    <picture>
+      <source srcset="assets/fotos/hero.webp" type="image/webp">
+      <img src="assets/fotos/hero.jpg" alt="Balayage rubio con ondas hecho por Joel Santiago en Alcalá de Henares" fetchpriority="high" width="1103" height="1323">
+    </picture>
+    <div class="hero-marco">Balayage · Rubio luminoso</div>
+  </div>
+</section>
+<div class="cinta">
+  <div class="cinta-in">
+    <span>Balayage</span><i>&#9670;</i><span>Colorimetría</span><i>&#9670;</i><span>Rubios</span><i>&#9670;</i>
+    <span>Cobrizos</span><i>&#9670;</i><span>Mechas</span><i>&#9670;</i><span>Recogidos</span><i>&#9670;</i>
+    <span>Maquillaje</span><i>&#9670;</i><span>Balayage</span><i>&#9670;</i><span>Colorimetría</span><i>&#9670;</i>
+    <span>Rubios</span><i>&#9670;</i><span>Cobrizos</span><i>&#9670;</i><span>Mechas</span><i>&#9670;</i>
+    <span>Recogidos</span><i>&#9670;</i><span>Maquillaje</span><i>&#9670;</i>
+  </div>
+</div>
+<section class="estudio" id="estudio">
+  <div class="wrap rej">
+    <div class="rev">
+      <span class="lab">El estudio</span>
+      <h2 class="disp">Color con <em>luz</em><br>y dimensión</h2>
+      <p>En el centro de Alcalá de Henares hay un colorista al que sus clientas llaman
+      «el mejor peluquero que he tenido». Joel Santiago trabaja el cabello como un lienzo
+      —diagnóstico, mezcla, paciencia y una idea clara de cómo quieres salir por la puerta.</p>
+      <p class="tenue">No hace falta que sepas explicarlo con tecnicismos. Le enseñas una foto,
+      te dice con sinceridad qué se puede conseguir en tu pelo y cómo mantenerlo en casa.
+      Atención personalizada, uno a uno, con la música puesta.</p>
+      <div class="datos">
+        <div><b>5,0</b><span>Valoración en Google</span></div>
+        <div><b>86</b><span>Reseñas reales</span></div>
+        <div><b>1:1</b><span>Atención personal</span></div>
+      </div>
+    </div>
+    <div class="retrato rev">
+      <picture>
+        <source srcset="assets/fotos/port-03.webp" type="image/webp">
+        <img src="assets/fotos/port-03.jpg" alt="Rubio con flequillo y reflejos sobre el muro vegetal del salón" loading="lazy" width="1050" height="1400">
+      </picture>
+    </div>
+  </div>
+</section>
+<section class="serv" id="servicios">
+  <div class="wrap">
+    <div class="cab rev">
+      <div>
+        <span class="lab">Servicios</span>
+        <h2 class="disp">Lo que hacemos</h2>
+      </div>
+      <p class="tenue" style="max-width:34ch">Todo con cita previa y presupuesto cerrado antes
+      de empezar. Si dudas, escríbeme y te digo qué te conviene.</p>
+    </div>
+    <div class="lista rev">
+      <a class="fila" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20me%20interesa%20Balayage" target="_blank" rel="noopener">
+        <span class="num">01</span>
+        <h3>Balayage</h3>
+        <p>El servicio estrella. Barrido de luz hecho a mano, mecha a mecha, para conseguir un rubio con dimensión y una raíz que no canta al crecer.</p>
+        <span class="ir">Pedir cita &#8594;</span>
+      </a>
+      <a class="fila" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20me%20interesa%20Mechas%20e%20iluminaci%C3%B3n" target="_blank" rel="noopener">
+        <span class="num">02</span>
+        <h3>Mechas e iluminación</h3>
+        <p>Rubios más claros, más fríos o más cálidos. Iluminación estudiada según tu tono de piel y cómo llevas el pelo.</p>
+        <span class="ir">Pedir cita &#8594;</span>
+      </a>
+      <a class="fila" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20me%20interesa%20Color%20total%20y%20colorimetr%C3%ADa" target="_blank" rel="noopener">
+        <span class="num">03</span>
+        <h3>Color total y colorimetría</h3>
+        <p>Color uniforme y matizado al milímetro, con producto profesional. Cubrir canas sin efecto casco.</p>
+        <span class="ir">Pedir cita &#8594;</span>
+      </a>
+      <a class="fila" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20me%20interesa%20Correcci%C3%B3n%20de%20color" target="_blank" rel="noopener">
+        <span class="num">04</span>
+        <h3>Corrección de color</h3>
+        <p>¿Te quedó naranja, con bandas o un rubio que no era? Diagnóstico honesto y un plan realista para dejarlo bien.</p>
+        <span class="ir">Pedir cita &#8594;</span>
+      </a>
+      <a class="fila" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20me%20interesa%20Corte%20y%20estilo" target="_blank" rel="noopener">
+        <span class="num">05</span>
+        <h3>Corte y estilo</h3>
+        <p>Cortes que se sostienen en casa: bob, long bob, capas y flequillos que te favorecen y sabes peinar.</p>
+        <span class="ir">Pedir cita &#8594;</span>
+      </a>
+      <a class="fila" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20me%20interesa%20Recogidos%20y%20peinados%20de%20evento" target="_blank" rel="noopener">
+        <span class="num">06</span>
+        <h3>Recogidos y peinados de evento</h3>
+        <p>Bodas, celebraciones y fiestas. Ideas que aguantan toda la noche y quedan bien en foto.</p>
+        <span class="ir">Pedir cita &#8594;</span>
+      </a>
+      <a class="fila" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20me%20interesa%20Tratamientos%20de%20recuperaci%C3%B3n" target="_blank" rel="noopener">
+        <span class="num">07</span>
+        <h3>Tratamientos de recuperación</h3>
+        <p>Reconstrucción e hidratación para pelo castigado por el color, el calor o la playa.</p>
+        <span class="ir">Pedir cita &#8594;</span>
+      </a>
+      <a class="fila" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20me%20interesa%20Maquillaje" target="_blank" rel="noopener">
+        <span class="num">08</span>
+        <h3>Maquillaje</h3>
+        <p>Maquillaje para tu evento, a juego con el peinado del día.</p>
+        <span class="ir">Pedir cita &#8594;</span>
+      </a>
+    </div>
+    <div class="nota-serv rev">
+      <span>El precio del color depende del largo y del estado del cabello, así que te lo doy
+      cerrado <strong>antes</strong> de empezar: cero sorpresas.</span>
+      <a class="boton" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20quiero%20presupuesto%20para%20un%20servicio" target="_blank" rel="noopener" style="border-color:#9A7B41;color:#9A7B41">Pídeme presupuesto</a>
+    </div>
+  </div>
+</section>
+<section class="port" id="trabajos">
+  <div class="wrap">
+    <div class="rev">
+      <span class="lab">Trabajos</span>
+      <h2 class="disp">Hecho en el estudio</h2>
+    </div>
+    <div class="mosaico rev">
+      <figure>
+        <picture>
+          <source srcset="assets/fotos/port-01.webp" type="image/webp">
+          <img src="assets/fotos/port-01.jpg" alt="Cobrizo — trabajo de Joel Santiago" loading="lazy">
+        </picture>
+        <figcaption>Cobrizo</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source srcset="assets/fotos/port-04.webp" type="image/webp">
+          <img src="assets/fotos/port-04.jpg" alt="Moreno iluminado — trabajo de Joel Santiago" loading="lazy">
+        </picture>
+        <figcaption>Moreno iluminado</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source srcset="assets/fotos/port-05.webp" type="image/webp">
+          <img src="assets/fotos/port-05.jpg" alt="Rizo cobrizo — trabajo de Joel Santiago" loading="lazy">
+        </picture>
+        <figcaption>Rizo cobrizo</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source srcset="assets/fotos/port-06.webp" type="image/webp">
+          <img src="assets/fotos/port-06.jpg" alt="Rubio frío — trabajo de Joel Santiago" loading="lazy">
+        </picture>
+        <figcaption>Rubio frío</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source srcset="assets/fotos/port-07.webp" type="image/webp">
+          <img src="assets/fotos/port-07.jpg" alt="Recogido con trenza — trabajo de Joel Santiago" loading="lazy">
+        </picture>
+        <figcaption>Recogido con trenza</figcaption>
+      </figure>
+      <figure>
+        <picture>
+          <source srcset="assets/fotos/port-02.webp" type="image/webp">
+          <img src="assets/fotos/port-02.jpg" alt="Bob cobrizo — trabajo de Joel Santiago" loading="lazy">
+        </picture>
+        <figcaption>Bob cobrizo</figcaption>
+      </figure>
+    </div>
+    <div class="pie rev">
+      <a class="boton" href="https://www.instagram.com/joelsantiago.color.designer/" target="_blank" rel="noopener">Ver más en Instagram @joelsantiago.color.designer</a>
+    </div>
+  </div>
+</section>
+<section class="salon" id="salon">
+  <div class="wrap rej">
+    <div class="rev">
+      <picture>
+        <source srcset="assets/fotos/salon-01.webp" type="image/webp">
+        <img src="assets/fotos/salon-01.jpg" alt="Fachada del salón Joel Santiago en la calle de Santiago 28, Alcalá de Henares" loading="lazy" width="1050" height="1400">
+      </picture>
+    </div>
+    <div class="rev">
+      <span class="lab">El salón</span>
+      <h2 class="disp">Calle de Santiago, 28</h2>
+      <p>En pleno centro de Alcalá de Henares, a un paso de la plaza. Un espacio tranquilo,
+      con buena música y sin prisas: la idea es que salgas con el pelo que querías y con
+      ganas de volver.</p>
+      <table class="horario">
+        <tr><td>Lunes</td><td>10:00-14:00</td></tr>
+        <tr><td>Martes</td><td>10:00-20:00</td></tr>
+        <tr><td>Miércoles</td><td>10:00-20:00</td></tr>
+        <tr><td>Jueves</td><td>10:00-20:00</td></tr>
+        <tr><td>Viernes</td><td>10:00-20:00</td></tr>
+        <tr><td>Sábado</td><td>10:00-14:00</td></tr>
+        <tr><td>Domingo</td><td>Cerrado</td></tr>
+      </table>
+      <p class="cita-frase">«Atención personalizada, el ambiente increíble con buena música
+      y un resultado espectacular.»</p>
+      <div class="acciones">
+        <a class="boton" href="https://www.google.com/maps/search/?api=1&amp;query=Joel+Santiago+color+designer+Calle+de+Santiago+28+Alcala+de+Henares" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="boton" href="tel:+34624106696">Llamar 624 10 66 96</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="opiniones" id="opiniones">
+  <div class="wrap">
+    <div class="rev">
+      <span class="lab" style="color:#9A7B41">Opiniones</span>
+      <h2 class="disp">Lo que dicen sus clientas</h2>
+      <div class="puntuacion">
+        <b>5,0</b>
+        <div><span class="estrellas" style="color:#9A7B41;font-size:1.1rem">★★★★★</span><br>
+        <span class="tenue" style="font-size:.85rem">86 reseñas en Google</span></div>
+        <a class="boton" style="border-color:#9A7B41;color:#9A7B41" href="https://www.google.com/maps/search/?api=1&amp;query=Joel+Santiago+color+designer+Calle+de+Santiago+28+Alcala+de+Henares" target="_blank" rel="noopener">Ver en Google</a>
+      </div>
+    </div>
+    <div class="tarjetas rev">
+      <article class="tj">
+        <span class="estrellas" style="color:#9A7B41">★★★★★</span>
+        <p>Mi primera vez en el salón y ha sido una gran experiencia. Atención personalizada, el ambiente increíble con buena energía y música. Joel es un gran profesional y he quedado muy contenta con mi nuevo cabello</p>
+        <span class="quien">Dalma Gutierrez · Hace 3 semanas</span>
+      </article>
+      <article class="tj">
+        <span class="estrellas" style="color:#9A7B41">★★★★★</span>
+        <p>Gracias Joel por tu trabajo tan impecable y profesional , volví a recuperar la vida de mi cabello y el color fabulosos tal cual como te lo pedí , eres el mejor de España en Colorimetría,además que los productos son una pasada ...... Mil Gracias ! En Horabuena</p>
+        <span class="quien">Carolina Valdivieso · Hace 4 meses</span>
+      </article>
+      <article class="tj">
+        <span class="estrellas" style="color:#9A7B41">★★★★★</span>
+        <p>Joel es, sin duda, el mejor peluquero que he tenido. Siempre atento, amable y con un trato excelente. Se nota que le apasiona lo que hace, siempre te hace sentir cómodo desde el primer momento. Su profesionalidad se nota en cada detalle, y el resultado de…</p>
+        <span class="quien">Maria Jose Carballo Contreras · Hace 5 meses</span>
+      </article>
+      <article class="tj">
+        <span class="estrellas" style="color:#9A7B41">★★★★★</span>
+        <p>Joel es un excelente profesional, maravilloso, quedé encantada con el resultado!! Os cuento que en mi caso el resultado es aún más excepcional, porque yo fui con el cabello muy quemado, muy maltratado y bicolor y salí con unas mechas hermosas y el cabello…</p>
+        <span class="quien">Deby D. · Hace 11 meses</span>
+      </article>
+      <article class="tj">
+        <span class="estrellas" style="color:#9A7B41">★★★★★</span>
+        <p>Fui atendida por Joel Santiago y me encantó todo. La atmósfera del lugar es muy agradable, con buena música y un interior precioso. Joel fue muy atento y profesional, escuchó mis deseos y me dio excelentes recomendaciones. El corte quedó perfecto, cuidó…</p>
+        <span class="quien">Anya Medvedeva · Hace 11 meses</span>
+      </article>
+      <article class="tj" style="justify-content:center;text-align:center;background:transparent;border-style:dashed">
+        <p style="font-style:normal;font-family:var(--sans);font-size:.98rem">Las 86 reseñas están en su ficha de Google.<br>Puedes leerlas todas —son suyas, no las hemos tocado.</p>
+        <a class="boton" style="border-color:#9A7B41;color:#9A7B41;align-self:center" href="https://www.google.com/maps/search/?api=1&query=Joel+Santiago+color+designer+Calle+de+Santiago+28+Alcala+de+Henares" target="_blank" rel="noopener">Leer las 86 reseñas</a>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="rev" style="text-align:center">
+      <span class="lab">Cita previa</span>
+      <h2 class="disp">Pide tu <em>cita</em></h2>
+      <p style="max-width:46ch;margin-inline:auto">Escríbeme por WhatsApp con una foto de tu
+      pelo y lo que tienes en mente. Te contesto yo, te digo precio y te doy hora.</p>
+      <div class="cta">
+        <a class="boton solido" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener">WhatsApp 687 22 70 42</a>
+        <a class="boton" href="tel:+34624106696">Llamar 624 10 66 96</a>
+      </div>
+    </div>
+    <div class="cols rev">
+      <div>
+        <h4>Dónde</h4>
+        <p>C. de Santiago, 28<br>28801 Alcalá de Henares, Madrid</p>
+        <p style="margin-top:.8rem"><a href="https://www.google.com/maps/search/?api=1&amp;query=Joel+Santiago+color+designer+Calle+de+Santiago+28+Alcala+de+Henares" target="_blank" rel="noopener">Ver en Google Maps</a></p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Lunes: 10:00 – 14:00<br>Martes a viernes: 10:00 – 20:00<br>Sábado: 10:00 – 14:00<br>Domingo: cerrado</p>
+        <p class="tenue" style="margin-top:.6rem;font-size:.8rem">Con cita previa.</p>
+      </div>
+      <div>
+        <h4>Sígueme</h4>
+        <p><a href="https://www.instagram.com/joelsantiago.color.designer/" target="_blank" rel="noopener">Instagram · @joelsantiago.color.designer</a></p>
+        <p><a href="https://www.tiktok.com/@joelsantiagocolordesigne" target="_blank" rel="noopener">TikTok · @joelsantiagocolordesigne</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="rej">
+      <div>
+        <div class="marca" style="font-size:1.2rem">Joel Santiago<small>Color Studio · Alcalá de Henares</small></div>
+      </div>
+      <div style="text-align:right">
+        <p style="color:#8A8579">C. de Santiago, 28 · 28801 Alcalá de Henares<br>
+        <a href="tel:+34624106696">624 10 66 96</a> · <a href="https://wa.me/34687227042" target="_blank" rel="noopener">WhatsApp 687 22 70 42</a></p>
+      </div>
+    </div>
+    <div class="legales">
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="politica-privacidad.html">Política de privacidad</a>
+      <a href="politica-cookies.html">Cookies</a>
+      <a href="declaracion-accesibilidad.html">Accesibilidad</a>
+      <span style="color:#4A4740">Diseño y desarrollo: NEO Labs</span>
+    </div>
+  </div>
+</footer>
+<a class="flota" href="https://wa.me/34687227042?text=Hola%20Joel%2C%20quiero%20pedir%20cita" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.4 0-.5.1-.7l.6-.7c.1-.2.1-.4 0-.6l-.9-2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4a4 4 0 0 0-1.2 2.8c0 1.7 1.2 3.3 1.4 3.5a12 12 0 0 0 4.7 4.1c1.9.8 2.4.8 3.2.7.5-.1 1.7-.7 1.9-1.3s.3-1.2.2-1.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+</a>
+<script>
+// navegacion con fondo al hacer scroll
+var cab = document.getElementById('cab');
+addEventListener('scroll', function () {
+  if (scrollY > 60) cab.classList.add('fijo'); else cab.classList.remove('fijo');
+}, { passive: true });
+// animaciones de entrada
+var io = new IntersectionObserver(function (es) {
+  es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visto'); io.unobserve(e.target); } });
+}, { threshold: .12 });
+document.querySelectorAll('.rev').forEach(function (el) { io.observe(el); });
+// menu movil: baja a la primera seccion
+var b = document.querySelector('.burger');
+if (b) b.addEventListener('click', function () {
+  document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "HairSalon",
+ "name": "Joel Santiago · Color Designer",
+ "description": "Peluquería y estudio de color en Alcalá de Henares. Especialista en balayage y colorimetría: rubios, cobrizos, mechas, cortes, recogidos y maquillaje. Cita previa.",
+ "url": "https://neolabs-clientes.github.io/joel-santiago/",
+ "telephone": "+34624106696",
+ "image": [
+  "https://neolabs-clientes.github.io/joel-santiago/og.jpg"
+ ],
+ "priceRange": "€€",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "C. de Santiago, 28",
+  "postalCode": "28801",
+  "addressLocality": "Alcalá de Henares",
+  "addressRegion": "Madrid",
+  "addressCountry": "ES"
+ },
+ "areaServed": "Alcalá de Henares",
+ "aggregateRating": {
+  "@type": "AggregateRating",
+  "ratingValue": 5,
+  "reviewCount": 86,
+  "bestRating": 5
+ },
+ "sameAs": [
+  "https://www.instagram.com/joelsantiago.color.designer/",
+  "https://www.tiktok.com/@joelsantiagocolordesigne"
+ ],
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Saturday"
+   ],
+   "opens": "10:00",
+   "closes": "14:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+   ],
+   "opens": "10:00",
+   "closes": "20:00"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Servicios",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Balayage"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Mechas e iluminación"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Color total y colorimetría"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Corrección de color"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Corte y estilo"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Recogidos y peinados de evento"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Tratamientos de recuperación"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Maquillaje"
+    }
+   }
+  ]
+ }
+}
+</script>
+</body>
+</html>
